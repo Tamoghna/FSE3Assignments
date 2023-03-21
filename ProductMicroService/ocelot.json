@@ -1,0 +1,19 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7283"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/e-auction/",
+      "UpstreamHttpMethod": [ "Get", "Delete","Put","Post" ],
+      "DownstreamPathTemplate": "/api/V1/Seller/AddProduct",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44362
+        }
+      ]
+    }
+  ]
+}
